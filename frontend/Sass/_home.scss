@@ -1,0 +1,27 @@
+.nav-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3c8fe8; /* Blue color, change as needed */
+    color: #fff; /* Text color, change as needed */
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+
+    &:hover {
+        background-color: #1e7ee5; /* Darker shade of blue on hover, change as needed */
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.home-buttons {
+    display: flex;
+}

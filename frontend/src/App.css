@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3c8fe8;
+  /* Blue color, change as needed */
+  color: #fff;
+  /* Text color, change as needed */
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.nav-button:hover {
+  background-color: #1e7ee5;
+  /* Darker shade of blue on hover, change as needed */
+}
+
+.nav-button:focus {
+  outline: none;
+}
+
+.home-buttons {
+  display: flex;
+}
+
+.api-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  vertical-align: top;
+}
+
+.api-page .api-call {
+  max-width: 400px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: inline-block;
+}
+
+.api-page .api-call h1 {
+  font-size: 24px;
+  padding: 10px;
+}
+
+.api-page .api-call .queryParam {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: start;
+  align-items: start;
+}
+
+.api-page .api-call .queryParam .left {
+  grid-column: 1;
+}
+
+.api-page .api-call .queryParam .right {
+  grid-column: 2;
+  display: grid;
+  grid-column: 1fr;
+}
+
+.api-page .api-call .queryParam .array-label {
+  display: grid;
+  grid-template-columns: repeat(1fr, 6);
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.api-page .api-call .queryParam .array-label label {
+  grid-row: 1;
+  grid-column: 1 / 6;
+}
+
+.api-page .api-call .queryParam .array-label button {
+  grid-row: 2;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.api-page .api-call .queryParam .array-label button:hover {
+  background-color: #0056b3;
+}
+
+.api-page .api-call .submit-button {
+  grid-column: 1 / 2;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.api-page .api-call .submit-button:hover {
+  background-color: #0056b3;
+}

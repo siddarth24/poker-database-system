@@ -1,0 +1,16 @@
+USE poker;
+SET FOREIGN_KEY_CHECKS = 0;
+DROP TABLE Card;
+DROP TABLE Game_Season;
+DROP TABLE Game;
+DROP TABLE Game_Tournament;
+DROP TABLE Matches;
+DROP TABLE Player_Region;
+DROP TABLE Player;
+DROP TABLE Player_Country;
+DROP TABLE Hole_Cards;
+DROP TABLE Round_Type;
+DROP TABLE Round;
+DROP TABLE Action;
+DROP TABLE Buy_in_cash_out;
+SET FOREIGN_KEY_CHECKS = 1;
